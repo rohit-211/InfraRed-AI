@@ -1,0 +1,6 @@
+{
+  "name": "Infrared Satellite Image Colorization System",
+  "description": "ISRO Hackathon Project: AI-driven Infrared Satellite Image Enhancement, Deep Learning U-Net Colorization, Real-time Metrics Evaluation, and Complete Python Deliverables Suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
