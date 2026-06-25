@@ -1,6 +1,6 @@
 import React from "react";
 import { ActiveTab } from "../types";
-import { Satellite, Code2, Cpu, Presentation, BookOpen, ShieldCheck } from "lucide-react";
+import { Satellite, Code2, Cpu, Presentation, BookOpen, ShieldCheck, BarChart3 } from "lucide-react";
 
 interface NavbarProps {
   activeTab: ActiveTab;
@@ -10,6 +10,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   const navItems: { id: ActiveTab; label: string; icon: React.ReactNode; badge?: string }[] = [
     { id: "dashboard", label: "Interactive Dashboard", icon: <Satellite className="w-4 h-4" /> },
+    { id: "analysis", label: "Detailed AI & Layman Analysis", icon: <BarChart3 className="w-4 h-4 text-orange-400" />, badge: "3 Graphs" },
     { id: "code", label: "Python Deliverables Suite", icon: <Code2 className="w-4 h-4" />, badge: "7 Files" },
     { id: "architecture", label: "U-Net Architecture & Flow", icon: <Cpu className="w-4 h-4" /> },
     { id: "slides", label: "Pitch Deck & Demo Script", icon: <Presentation className="w-4 h-4" />, badge: "12 Slides" },

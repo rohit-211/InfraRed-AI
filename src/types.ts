@@ -1,4 +1,4 @@
-export type ActiveTab = "dashboard" | "code" | "architecture" | "slides" | "explainability";
+export type ActiveTab = "dashboard" | "analysis" | "code" | "architecture" | "slides" | "explainability";
 
 export type EnhancementMethod = "none" | "hist_eq" | "clahe" | "sharpen" | "denoise_gaussian";
 

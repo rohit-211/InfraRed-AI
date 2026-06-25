@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ActiveTab } from "./types";
 import { Navbar } from "./components/Navbar";
 import { DashboardTab } from "./components/DashboardTab";
+import { AnalysisTab } from "./components/AnalysisTab";
 import { CodeSuiteTab } from "./components/CodeSuiteTab";
 import { ArchitectureTab } from "./components/ArchitectureTab";
 import { PitchDeckTab } from "./components/PitchDeckTab";
@@ -18,6 +19,7 @@ export default function App() {
       {/* Main Workspace Stage */}
       <main className="flex-1 pb-16">
         {activeTab === "dashboard" && <DashboardTab />}
+        {activeTab === "analysis" && <AnalysisTab />}
         {activeTab === "code" && <CodeSuiteTab />}
         {activeTab === "architecture" && <ArchitectureTab />}
         {activeTab === "slides" && <PitchDeckTab />}
